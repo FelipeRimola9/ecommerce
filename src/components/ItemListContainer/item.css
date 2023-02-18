@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Kanit:ital,wght@1,600&family=Press+Start+2P&family=Roboto&display=swap');
+
+.tarjetas{
+  margin-top: 1rem;
+}
+.card{
+    position: relative;
+    margin: 0.5rem;
+    width: 10rem;
+    height: 12rem !important;
+    border-radius: 0.75rem !important;
+    color: black;
+    box-shadow: 0.35rem 0.35rem 0.35rem rgb(175, 197, 226);
+    background-color: whitesmoke;
+    overflow: hidden;  
+    transition: all 0.35s ease-in;
+    display: flex !important;
+    justify-content: flex-start;
+    /* cursor: pointer; */
+  }
+  
+  .card-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.25rem;
+    height: 50%;
+  }
+  .card-img img{
+    border-radius: 0.75rem !important;
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+  }
+  
+  .card:hover{
+    box-shadow: 0.35rem 0.35rem 0.35rem rgb(175, 197, 226);    
+    transform: scale(1, 1.03);
+    transform-origin: top;
+  }
+  
+  .card-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.2rem;
+    height: 50%;
+  }
+
+  .articulo{
+    font-size: medium;
+    font-family: 'Inconsolata', monospace;
+    height: 40%;
+  }
+
+  .priceTag{
+    /* color: #2fb70a; */
+    font-weight: bold;
+    font-size: large;
+    height: 20%;
+  }
+
+  .priceTag small{
+    margin-left: 0.4rem;
+  }
+
+  .descripcion{
+    display: none;
+    font-size: small;
+    text-align: center !important;
+    height: 40%;
+  }
+
+  .card-count{
+    display: none;
+  }
+
+  .ver{
+    display: flex;
+  }
+
+  .ver:active{
+    display: none;
+  }
+
+  .card:hover .descripcion{
+    display: block;
+    text-align: center !important;
+  }
+  
+  .card-favicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+    border-radius:  50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(183, 174, 174, 0.836) !important;
+    color: #8c8c8e !important;
+    font-size: large !important;
+  }
+  
+  .card-favicon.favorite{
+    /* display: block; */
+    background-color: rgb(231, 187, 8) !important;
+    color: white !important;
+  }
+  
+  /* small{
+    color: #8c8c8e;
+  } */
+
+  .closeBtn{
+    margin: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: x-large;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 0;
+      right: 0;
+      border: solid 2px #1b71c8;
+      cursor: pointer;
+      background-color: #fff;
+      color: #1b71c8;
+    }
+
+    .closeBtn div{
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+    .offerTag{
+      color: #0dac0d;
+    }
+
+    .item-new{
+      background-color: #579fec !important;
+    }
+
+    .offerTag small{
+      margin-left: 0.4rem;
+    }
+
+@media (min-width:768px) {
+  
+
+.tarjetas{
+  margin-top: 1rem;
+}
+.card{
+    position: relative;
+    margin: 0.6rem;
+    width: 15rem;
+    height: 15rem !important;
+    border-radius: 0.75rem !important;
+    color: black;
+    box-shadow: 0.35rem 0.35rem 0.35rem rgb(175, 197, 226);
+    background-color: whitesmoke;
+    overflow: hidden;  
+    transition: all 0.20s ease-in;
+    display: flex !important;
+    justify-content: flex-start;
+    /* cursor: pointer; */
+  }
+  
+  .card-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.25rem;
+    height: 50%;
+  }
+  .card-img img{
+    border-radius: 0.75rem !important;
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+  }
+  
+  .card:hover{
+    box-shadow: 0.35rem 0.35rem 0.35rem rgb(175, 197, 226);    
+    transform:  scale(1, 1.05);
+    transform-origin: top;
+  }
+  
+  .card-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.2rem;
+    height: 30%;
+    justify-content: space-between;
+  }
+
+
+  .titulo{
+    font-size: larger;
+  }
+
+  .priceTag{
+    /* color: #2fb70a; */
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .descripcion{
+    display: none;
+    text-align: center !important;
+  }
+
+  .card-count{
+    display: none;
+  }
+
+  .card:hover .descripcion{
+    display: block;
+    text-align: center !important;
+  }
+
+  /* .card:hover .card-count{
+    display: none;
+    text-align: center !important;
+  } */
+  
+  .card-favicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+    border-radius:  50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(183, 174, 174, 0.836) !important;
+    color: #8c8c8e !important;
+    font-size: large !important;
+  }
+  
+  .card-favicon.favorite{
+    display: flex;
+    background-color: rgb(231, 187, 8) !important;
+    color: white !important;
+  }
+  
+  small{
+    color: #8c8c8e;
+  }
+
+}

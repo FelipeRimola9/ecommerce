@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: flex-start;
+}
+
+.navbar-collapse {
+    margin-left: 1rem;
+}
+
+.lupa {
+    width: auto;
+    margin: 0 !important;
+    background-color: #1b71c8 !important;
+    color: whitesmoke !important;
+}
+
+.logo {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        display: flex;
+    }
+
+    .inicio{
+        display: none !important;
+    }
+}
+
+
+
+
+.carrito {
+    position: static;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-size: x-large;
+    color: rgb(84, 84, 84);
+}
+
+@media (min-width: 240px) {
+    .d-flex {
+        width: 40%;
+    }
+}

@@ -1,0 +1,36 @@
+.fondo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.fondoIMG {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .fondo{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+    .fondoIMG {
+        width: 40%;
+        height: 50%;
+        display: flex;
+    }
+}
+
+.titulo {
+    font-family: 'Kanit', sans-serif;
+    font-size: x-large;
+}
+
+.subtitulo{
+    font-size: medium;
+}
